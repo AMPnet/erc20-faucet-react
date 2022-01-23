@@ -4,10 +4,11 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Message from './Message'
 
-const tokenAddress = "0xA4eE602c16C448Dc0D1fc38E6FC12f0d6C672Cbe"
-
 const Faucet = (props) => {
 
+  const [tokenAddress, setTokenAddress] = useState()
+  const [receiverAddress, setReceiverAddress] = useState()
+  const [tokenAmount, setTokenAmount] = useState()
   const [balance, setBalance] = useState()
   const [showBalance, setShowBalance] = useState(false)
 
@@ -26,22 +27,26 @@ const Faucet = (props) => {
 
   async function faucet() {
     if (typeof window.ethereum !== 'undefined') {
-      const account = await window.ethereum.request({ method: 'eth_requestAccounts' });
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(tokenAddress, props.tokenContract.abi, signer);
-      contract.faucet(account[0], 100);
+      contract.faucet(receiverAddress, tokenAmount);
     }
   }
     return (
         <div>
+        <p>Mumbai USDC: 0x1eDaD4f5Dac6f2B97E7F6e5D3fF5f04D666685c3</p>
+        <p>Polygon USDC: 0xbED6f6e804a183444355c27f45AABc2E4A17F7D2</p>
         <Card style={{background: "rgba(227, 104, 222, 0.71)"}}>
         <Card.Body>
         <Card.Subtitle>recieve faucet ERC20 to your wallet
         </Card.Subtitle><br></br>
         <div className="d-grid gap-2">
-        <Button onClick={faucet}>get faucet token!</Button>
-        <Button onClick={getBalance} variant="warning">check my balance</Button>
+        <input onChange={e => setTokenAddress(e.target.value)} placeholder="Token 0x address" />
+        <input onChange={e => setReceiverAddress(e.target.value)} placeholder="Receiver 0x address" />
+        <input onChange={e => setTokenAmount(e.target.value)} placeholder="Amount" />
+        <Button onClick={faucet}>faucet!</Button>
+        <Button onClick={getBalance} variant="warning">check balance?</Button>
         { showBalance ? <Message balance={balance}/> : null }
         </div>
         </Card.Body>
