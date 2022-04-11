@@ -90,7 +90,10 @@ const Faucet = (props) => {
       }
     }
     try {
-      await contract.faucet(receiverAddress, tokenAmount)
+      await contract.faucet(
+        receiverAddress,
+        ethers.utils.parseUnits(tokenAmount, 6)
+      )
       window.alert("Success")
     } catch (err) {
       window.alert(err.message)

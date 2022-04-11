@@ -7,7 +7,7 @@ Test USDC can be used while exploring the [AMPnet Tokenizer](https://staging.amp
 ## Demo
 
 [Live Demo](https://getusdc.vercel.app/)
-<img src="https://i.ibb.co/LgrnGRT/Screenshot-2021-05-31-at-12-25-38.png" alt="Screenshot-2021-05-31-at-12-25-38" border="0">
+![App Screenshot](./public/app-screenshot.jpeg)
 
 ## Contracts
 
