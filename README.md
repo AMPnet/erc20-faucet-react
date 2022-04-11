@@ -15,5 +15,5 @@ Test USDC can be used while exploring the [AMPnet Tokenizer](https://staging.amp
 
 **Polygon Mumbai Test USDC:** *0x1eDaD4f5Dac6f2B97E7F6e5D3fF5f04D666685c3*
 
-**AMPnet PoA Test USDC:** *0x0E97c3931CFD56EBE43f07C13730CDe5fCF23640*
+**AMPnet PoA Test USDC:** *0xC5C69f646E94abD4D169a0b8a4F4A493360BF7F9*
 

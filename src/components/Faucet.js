@@ -48,8 +48,8 @@ const Faucet = (props) => {
   }
 
   async function faucetPrivate() {
-    const usdc = "0x0E97c3931CFD56EBE43f07C13730CDe5fCF23640"
-    const chainId = 1337
+    const usdc = "0xC5C69f646E94abD4D169a0b8a4F4A493360BF7F9"
+    const chainId = 1984
     const chainName = 'AMPnet PoA'
     const rpc = 'https://poa.ampnet.io/rpc'
     const blockExplorer = 'https://poa.ampnet.io/'
