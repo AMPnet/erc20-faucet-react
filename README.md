@@ -1,14 +1,19 @@
 
-# An ERC20 token faucet on the Goreli Testnet 
+# AMPnet USDC faucet
 
-[Live Demo](https://60b43852a834858831d84c15--inspiring-liskov-361eb4.netlify.app/)
+This Dapp allows users to mint arbitrary amount of test USDC on Polygon, Mumbai and Private chains. 
+Test USDC can be used while exploring the [AMPnet Tokenizer](https://staging.ampnet.io/home) platform (demo environment).
 
+## Demo
+
+[Live Demo](https://getusdc.vercel.app/)
 <img src="https://i.ibb.co/LgrnGRT/Screenshot-2021-05-31-at-12-25-38.png" alt="Screenshot-2021-05-31-at-12-25-38" border="0">
 
-This Dapp allows users to receive 100 FCT on the Goreli test net and to send FCT to other addresses. 
+## Contracts
 
-Having an erc20 faucet can be very useful for testing your Dapp, so I decided to make one.
+**Polygon Test USDC:** *0xbED6f6e804a183444355c27f45AABc2E4A17F7D2*
 
-It uses **hardhat**, **ethers**, **openzeppelin-contracts**,**react** and **bootstrap-react**, this is a powerful stack, and in this simple project shows some design patterns that can be expanded and explored to build powerful apps whilst creating powerful UI components fast. 
+**Polygon Mumbai Test USDC:** *0x1eDaD4f5Dac6f2B97E7F6e5D3fF5f04D666685c3*
 
-**Contract Address** *0xA4eE602c16C448Dc0D1fc38E6FC12f0d6C672Cbe*
+**AMPnet PoA Test USDC:** *0x0E97c3931CFD56EBE43f07C13730CDe5fCF23640*
+

@@ -1,6 +1,6 @@
 {
-  "name": "react-ether-app",
-  "version": "0.1.0",
+  "name": "usdc-faucet-dapp",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",

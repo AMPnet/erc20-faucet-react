@@ -24,15 +24,6 @@ task("accounts", "Prints the list of accounts", async () => {
   networks: {
     hardhat: {
       chainId: 1337
-    },
-    ropsten: {
-      url: "https://ropsten.infura.io/v3/0c6bd9d4f08147579d6a68d06b4ece4a",
-      accounts: [`0x${process.env.PRIVATE_KEY}`]
-    },
-    goreli: {
-      url: "https://goerli.infura.io/v3/0c6bd9d4f08147579d6a68d06b4ece4a",
-      accounts: [`0x${process.env.PRIVATE_KEY}`]
-
     }
   },
   solidity: "0.8.3"

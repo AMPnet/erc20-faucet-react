@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgba(252, 203, 250, 0.65);
+  background-image: linear-gradient(180deg,#e7eaf1 0%,rgba(49,58,234,0.03) 100%) !important;
   height: 100%;
   height: 100vh;
   display: flex;
@@ -16,4 +16,10 @@
 
 .App-intro {
   font-size: large;
+}
+
+@media only screen and (min-width: 500px) {
+  .card-wrapper {
+    min-width: 500px;
+  }
 }
